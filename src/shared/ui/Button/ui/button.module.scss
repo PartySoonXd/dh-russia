@@ -1,0 +1,17 @@
+.button {
+	cursor: pointer;
+	color: var(--secondary-color);
+	padding: 6px 15px;
+}
+
+.clear {
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.primary {
+	background: var(--inverted-primary-color);
+	color: var(--primary-color);
+	border: none;
+}
