@@ -2,6 +2,7 @@ import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import globals from 'globals'
 import stylistic from '@stylistic/eslint-plugin'
+import stylisticJsx from '@stylistic/eslint-plugin-jsx'
 
 export default tseslint.config([
   {
@@ -10,6 +11,12 @@ export default tseslint.config([
   eslint.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
   tseslint.configs.stylistic,
+  stylistic.configs.customize({
+    indent: 'tab',
+    quotes: 'single',
+    semi: false,
+    jsx: true,
+  }),
   {
     languageOptions: {
       parser: tseslint.parser,
@@ -27,11 +34,14 @@ export default tseslint.config([
   },
   {
     plugins: {
-      '@stylistic': stylistic
+      '@stylistic': stylistic,
+      '@stylistic/jsx': stylisticJsx,
     }
   },
   {
     rules: {
+      // "@stylistic/indent": ["error", 4],
+      // "@stylistic/jsx/jsx-indent": ['error', 2, {indentLogicalExpressions: true}],
       "@typescript-eslint/no-unused-vars": "warn",
       "@typescript-eslint/no-misused-promises": [
         "error",
@@ -39,7 +49,6 @@ export default tseslint.config([
           "checksVoidReturn": false
         }
       ],
-      "@stylistic/indent": ["error", 4],
       "@stylistic/quotes": ["error", "single", { "avoidEscape": true }],
       "@stylistic/semi": ["error", "never"],
       "@stylistic/keyword-spacing": ["error", { "before": true, "after": true }],
@@ -47,7 +56,6 @@ export default tseslint.config([
       "@stylistic/max-len": ["error", { "code": 100, "ignoreUrls": true, "ignoreStrings": true }],
       "sort-imports": ["error", { "ignoreCase": true, "ignoreDeclarationSort": true }],
       "@stylistic/jsx-quotes": ["error", "prefer-double"],
-      "@stylistic/jsx/jsx-indent": ["error", 2, {indentLogicalExpressions: true}],
       "@stylistic/space-before-function-paren": ["error", {
         "anonymous": "always",
         "named": "never",

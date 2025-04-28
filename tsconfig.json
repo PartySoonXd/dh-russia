@@ -12,13 +12,20 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "*": ["./src/*"]
+      "@/*": ["src/*"],
+      "@app/*": ["src/app/*"],
+      "@entities/*": ["src/entities/*"],
+      "@features/*": ["src/features/*"],
+      "@shared/*": ["src/shared/*"],
+      "@pages/*": ["src/pages/*"],
+      "@widgets/*": ["src/widgets/*"],
+      "@processes/*": ["src/processes/*"]
     }
   },
   "ts-node": {
-      "compilerOptions": {
-          "module": "CommonJS"
-      }
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
   },
   "include": [
     "config/**/*",

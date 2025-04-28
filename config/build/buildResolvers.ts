@@ -1,17 +1,20 @@
 import webpack from 'webpack'
+import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin'
 
 import { BuildOptions } from './types/config'
 
 export function buildResolvers(options: BuildOptions): webpack.ResolveOptions {
-  const { paths } = options
+	const { paths } = options
 
-  return {
-    extensions: [
-      '.ts', '.tsx', '.js',
-    ],
-    preferAbsolute: true,
-    modules: [paths.src, 'node_modules'],
-    mainFiles: ['index'],
-    alias: {},
-  }
+	return {
+		extensions: [
+			'.ts', '.tsx', '.js',
+		],
+		plugins: [
+			new TsconfigPathsPlugin({}),
+		],
+		preferAbsolute: true,
+		modules: [paths.src, 'node_modules'],
+		mainFiles: ['index'],
+	}
 }
