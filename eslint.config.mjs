@@ -20,11 +20,11 @@ export default tseslint.config([
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {
-          projectService: true,
-          tsconfigRootDir: import.meta.dirname,
-          ecmaFeatures: {
-              jsx: true,
-          },
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+        ecmaFeatures: {
+            jsx: true,
+        },
       },
       globals: {
           ...globals.browser,
@@ -78,6 +78,7 @@ export default tseslint.config([
       'build/*',
       'node_modules/*',
       '*.config.{ts,js,mjs}',
+      '.stylelintrc.mjs'
     ],
-  }
+  },
 ]);
