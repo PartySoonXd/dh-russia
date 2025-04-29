@@ -2,7 +2,6 @@ import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import globals from 'globals'
 import stylistic from '@stylistic/eslint-plugin'
-import stylisticJsx from '@stylistic/eslint-plugin-jsx'
 
 export default tseslint.config([
   {
@@ -35,13 +34,10 @@ export default tseslint.config([
   {
     plugins: {
       '@stylistic': stylistic,
-      '@stylistic/jsx': stylisticJsx,
     }
   },
   {
     rules: {
-      // "@stylistic/indent": ["error", 4],
-      // "@stylistic/jsx/jsx-indent": ['error', 2, {indentLogicalExpressions: true}],
       "@typescript-eslint/no-unused-vars": "warn",
       "@typescript-eslint/no-misused-promises": [
         "error",
