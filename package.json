@@ -11,25 +11,25 @@
     "lint:css": "stylelint \"**/*.{css,scss}\"",
     "lint:css:fix": "stylelint \"**/*.{css,scss}\" --fix",
     "unit": "jest --config ./config/jest/jest.config.ts",
-    "storybook": "storybook dev -p 6006 --no-open --config-dir ./config/storybook",
-    "build-storybook": "storybook build --config-dir ./config/storybook"
+    "storybook": "storybook dev -c config/storybook -p 6006",
+    "build-storybook": "storybook -c config/storybook build"
   },
   "devDependencies": {
     "@babel/core": "^7.26.9",
     "@babel/preset-env": "^7.26.9",
     "@babel/preset-react": "^7.26.3",
     "@babel/preset-typescript": "^7.26.0",
-    "@chromatic-com/storybook": "3.2.5",
     "@eslint/js": "^9.24.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.16",
-    "@storybook/addon-essentials": "8.6.2",
-    "@storybook/addon-interactions": "8.6.2",
-    "@storybook/addon-onboarding": "8.6.2",
-    "@storybook/addon-webpack5-compiler-swc": "2.1.0",
-    "@storybook/blocks": "8.6.2",
-    "@storybook/react": "8.6.2",
-    "@storybook/react-webpack5": "8.6.2",
-    "@storybook/test": "8.6.2",
+    "@storybook/addon-essentials": "8.6.12",
+    "@storybook/addon-interactions": "8.6.12",
+    "@storybook/addon-onboarding": "8.6.12",
+    "@storybook/addon-styling-webpack": "^1.0.1",
+    "@storybook/addon-webpack5-compiler-swc": "3.0.0",
+    "@storybook/blocks": "8.6.12",
+    "@storybook/react": "8.6.12",
+    "@storybook/react-webpack5": "^8.6.12",
+    "@storybook/test": "8.6.12",
     "@stylistic/eslint-plugin": "^4.2.0",
     "@svgr/webpack": "^8.1.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -48,6 +48,7 @@
     "css-loader": "^7.1.2",
     "eslint": "^9.24.0",
     "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-storybook": "^0.12.0",
     "file-loader": "^6.2.0",
     "globals": "^16.0.0",
     "html-webpack-plugin": "^5.6.3",
@@ -66,7 +67,7 @@
     "regenerator-runtime": "^0.14.1",
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5",
-    "storybook": "8.6.2",
+    "storybook": "8.6.12",
     "style-loader": "^4.0.0",
     "stylelint": "^16.19.1",
     "stylelint-config-css-modules": "^4.4.0",
@@ -99,5 +100,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
 }
