@@ -12,4 +12,16 @@ export const globalTypes = {
 			showName: true,
 		},
 	},
+	locale: {
+		name: 'Locale',
+		description: 'Internationalization locale',
+		toolbar: {
+			icon: 'globe',
+			items: [
+				{ value: 'en', title: 'English' },
+				{ value: 'ru', title: 'Russian' },
+			],
+			showName: true,
+		},
+	},
 }
