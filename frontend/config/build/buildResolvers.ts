@@ -18,7 +18,6 @@ export function buildResolvers(options: BuildOptions): webpack.ResolveOptions {
 		modules: [paths.src, 'node_modules'],
 		mainFiles: ['index'],
 		alias: {
-			'@*': path.resolve(__dirname, '..', '..', 'src'),
 			'@app': path.resolve(__dirname, '..', '..', 'src', 'app'),
 			'@entities': path.resolve(__dirname, '..', '..', 'src', 'entities'),
 			'@features': path.resolve(__dirname, '..', '..', 'src', 'features'),
