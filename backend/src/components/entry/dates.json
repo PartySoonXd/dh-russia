@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_entry_dates",
+  "info": {
+    "displayName": "Dates"
+  },
+  "options": {},
+  "attributes": {
+    "startDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "endDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "condition": {
+      "type": "enumeration",
+      "enum": [
+        "скоро",
+        "идет",
+        "завершен"
+      ],
+      "required": true
+    }
+  }
+}

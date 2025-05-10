@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "educational_resources",
+  "info": {
+    "singularName": "educational-resource",
+    "pluralName": "educational-resources",
+    "displayName": "Educational Resource",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": true,
+      "maxLength": 400
+    },
+    "base": {
+      "type": "component",
+      "repeatable": false,
+      "component": "entry.base"
+    }
+  }
+}
