@@ -1,6 +1,6 @@
 import { DecoratorFunction } from 'storybook/internal/types'
 import { Suspense, useEffect } from 'react'
-import i18n from '@/shared/config/i18n/i18n'
+import i18n from '@shared/config/i18n/i18n'
 import { I18nextProvider } from 'react-i18next'
 
 const I18nDecorator: DecoratorFunction = (StoryFn, context) => {
