@@ -24,7 +24,6 @@ export function buildResolvers(options: BuildOptions): webpack.ResolveOptions {
 			'@shared': path.resolve(__dirname, '..', '..', 'src', 'shared'),
 			'@pages': path.resolve(__dirname, '..', '..', 'src', 'pages'),
 			'@widgets': path.resolve(__dirname, '..', '..', 'src', 'widgets'),
-			'@processes': path.resolve(__dirname, '..', '..', 'src', 'processes'),
 		},
 	}
 }
