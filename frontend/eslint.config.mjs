@@ -39,6 +39,7 @@ export default tseslint.config([
   {
     rules: {
       "@typescript-eslint/no-unused-vars": "warn",
+      "@typescript-eslint/ban-ts-comment": "warn",
       "@typescript-eslint/no-misused-promises": [
         "error",
         {

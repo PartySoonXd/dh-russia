@@ -59,6 +59,7 @@ const config: StorybookConfig = {
 			const cssLoader = buildCssLoader(true)
 			const svgLoader = buildSvgLoader()
 
+			// @ts-ignore
 			config.module.rules = config.module.rules?.map((rule: RuleSetRule) => {
 				if (/\.svg/.test(rule.test as string)) {
 					return {
