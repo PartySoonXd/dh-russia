@@ -1,8 +1,10 @@
 import webpack from 'webpack'
+import path from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 import { BuildOptions } from './types/config'
+import DotenvWebpackPlugin from 'dotenv-webpack'
 
 export function buildPlugins(options: BuildOptions): webpack.WebpackPluginInstance[] {
 	const { isDev, paths } = options
@@ -18,6 +20,9 @@ export function buildPlugins(options: BuildOptions): webpack.WebpackPluginInstan
 		}),
 		new webpack.DefinePlugin({
 			__IS_DEV__: JSON.stringify(isDev),
+		}),
+		new DotenvWebpackPlugin({
+			path: path.resolve(__dirname, '..', '..', '.env'),
 		}),
 	]
 
