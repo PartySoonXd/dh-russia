@@ -369,6 +369,38 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
+  collectionName: 'articles';
+  info: {
+    displayName: 'Article';
+    pluralName: 'articles';
+    singularName: 'article';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    base: Schema.Attribute.Component<'entry.base', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::article.article'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    user: Schema.Attribute.Relation<
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
+  };
+}
+
 export interface ApiEducationalResourceEducationalResource
   extends Struct.CollectionTypeSchema {
   collectionName: 'educational_resources';
@@ -527,37 +559,6 @@ export interface ApiPaymentPayment extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::payment.payment'
     > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    user: Schema.Attribute.Relation<
-      'manyToOne',
-      'plugin::users-permissions.user'
-    >;
-  };
-}
-
-export interface ApiPostPost extends Struct.CollectionTypeSchema {
-  collectionName: 'posts';
-  info: {
-    description: '';
-    displayName: 'Post';
-    pluralName: 'posts';
-    singularName: 'post';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    base: Schema.Attribute.Component<'entry.base', false>;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    date: Schema.Attribute.DateTime & Schema.Attribute.Required;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::post.post'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
@@ -1111,6 +1112,7 @@ export interface PluginUsersPermissionsUser
   attributes: {
     academicDegree: Schema.Attribute.Enumeration<['a', 'b', 'c']>;
     academicTitle: Schema.Attribute.Enumeration<['a', 'b', 'c']>;
+    articles: Schema.Attribute.Relation<'oneToMany', 'api::article.article'>;
     blocked: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     confirmationToken: Schema.Attribute.String & Schema.Attribute.Private;
     confirmed: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
@@ -1140,7 +1142,6 @@ export interface PluginUsersPermissionsUser
         minLength: 6;
       }>;
     payments: Schema.Attribute.Relation<'oneToMany', 'api::payment.payment'>;
-    posts: Schema.Attribute.Relation<'oneToMany', 'api::post.post'>;
     projects: Schema.Attribute.Relation<'manyToMany', 'api::project.project'>;
     provider: Schema.Attribute.String;
     publications: Schema.Attribute.Relation<
@@ -1175,12 +1176,12 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::article.article': ApiArticleArticle;
       'api::educational-resource.educational-resource': ApiEducationalResourceEducationalResource;
       'api::event.event': ApiEventEvent;
       'api::feedback.feedback': ApiFeedbackFeedback;
       'api::organization.organization': ApiOrganizationOrganization;
       'api::payment.payment': ApiPaymentPayment;
-      'api::post.post': ApiPostPost;
       'api::project.project': ApiProjectProject;
       'api::publication.publication': ApiPublicationPublication;
       'plugin::content-releases.release': PluginContentReleasesRelease;
