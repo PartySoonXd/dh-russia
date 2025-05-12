@@ -1,0 +1,15 @@
+export enum AppRoutes {
+	HOME = 'home',
+	ARTICLE = 'article',
+	BLOG = 'blog',
+	EDUCATIONAL_RESOURCES = 'educational-resources',
+	EVENT = 'event',
+	EVENTS = 'events',
+	NEWS = 'news',
+	PARTNERS = 'partners',
+	POLICY = 'policy',
+	PROJECT = 'project',
+	PROJECTS = 'projects',
+	ABOUT = 'about',
+	NOT_FOUND = 'not-found',
+}
