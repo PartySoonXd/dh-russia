@@ -88,6 +88,7 @@
     "webpack-dev-server": "^5.2.0"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.75.7",
     "axios": "^1.8.1",
     "i18next": "^24.2.2",
     "i18next-browser-languagedetector": "^8.0.4",
@@ -95,7 +96,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.1",
-    "react-router-dom": "^7.2.0"
+    "react-router-dom": "^7.2.0",
+    "zod": "^3.24.4"
   },
   "keywords": [],
   "author": "",
