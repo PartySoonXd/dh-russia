@@ -3,5 +3,11 @@
   "page-not-found": "Страница не найдена",
   "collapse": "Свернуть",
   "something-went-wrong": "Что-то пошло не так!",
-  "reload-page": "Обновить страницу"
+  "reload-page": "Обновить страницу",
+  "about-link": "Об организации",  
+  "blog-link": "Блог",
+  "educational-resources-link": "Ресурсы",  
+  "projects-link": "Проекты",
+  "profile-link": "Личный кабинет",
+  "policy-link": "Политика соглашения"  
 }

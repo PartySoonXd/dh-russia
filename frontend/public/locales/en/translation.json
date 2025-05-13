@@ -3,5 +3,11 @@
   "page-not-found": "Page not found",
   "collapse": "Collapse",
   "something-went-wrong": "Something went wrong!",
-  "reload-page": "Reload page"
+  "reload-page": "Reload page",
+  "about-link": "About us",
+  "blog-link": "Blog",
+  "educational-resources-link": "Resources",  
+  "projects-link": "Projects",
+  "profile-link": "Profile",
+  "policy-link": "Policy"  
 }
