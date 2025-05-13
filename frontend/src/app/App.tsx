@@ -6,6 +6,7 @@ import { Suspense } from 'react'
 import { PageLoader } from '@widgets/PageLoader'
 import { useTheme } from './providers/ThemeProvider'
 import { AppRouter } from './providers/AppRouter'
+import { Footer } from '@widgets/Footer'
 
 const App = () => {
 	const { theme } = useTheme()
@@ -14,9 +15,10 @@ const App = () => {
 		<div className={classNames('app', {}, [theme])}>
 			<Suspense fallback={<PageLoader />}>
 				<Navbar />
-				<main className="content">
+				<main className="content" style={{ flexGrow: 1 }}>
 					<AppRouter />
 				</main>
+				<Footer />
 			</Suspense>
 		</div>
 	)
