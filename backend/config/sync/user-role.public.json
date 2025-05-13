@@ -1,0 +1,104 @@
+{
+  "documentId": "k8w8em4xydc4n33lox2yk25c",
+  "name": "Public",
+  "description": "Default role given to unauthenticated user.",
+  "type": "public",
+  "locale": null,
+  "permissions": [
+    {
+      "documentId": "uoas8i5gp5rfr9nbxx5lpdfl",
+      "action": "api::article.article.find",
+      "locale": null
+    },
+    {
+      "documentId": "s1qhswwts2kt6xfpjwoz8myd",
+      "action": "api::article.article.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "qoab17z8t9jgw6xedazjq436",
+      "action": "api::educational-resource.educational-resource.find",
+      "locale": null
+    },
+    {
+      "documentId": "um1k603aqvy0ttvvxdd5woul",
+      "action": "api::educational-resource.educational-resource.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "kczctwl0fnulbrmku0fmmvwc",
+      "action": "api::event.event.find",
+      "locale": null
+    },
+    {
+      "documentId": "thmtbisev00tadeitusr7nnz",
+      "action": "api::event.event.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "i6i9h684oqjc3cevx1u4cynk",
+      "action": "api::organization.organization.find",
+      "locale": null
+    },
+    {
+      "documentId": "ucvmibg0isakgayk4wtfp11n",
+      "action": "api::organization.organization.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "n0qxnjgkyg66mnzsao66ktij",
+      "action": "api::project.project.find",
+      "locale": null
+    },
+    {
+      "documentId": "kr6nphfhpc2dxfejkspj6gey",
+      "action": "api::project.project.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "jprl7k9fmx88679u7635fuh0",
+      "action": "api::publication.publication.find",
+      "locale": null
+    },
+    {
+      "documentId": "vdg3z1xq29o1bdalc85wp856",
+      "action": "api::publication.publication.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "xpkqk8k1dmhxvaw5ju2olh63",
+      "action": "plugin::users-permissions.auth.callback",
+      "locale": null
+    },
+    {
+      "documentId": "o4sgv1ofhkaauqlb6t57pzm8",
+      "action": "plugin::users-permissions.auth.connect",
+      "locale": null
+    },
+    {
+      "documentId": "klm4r2us4hg2n5obvsde7k66",
+      "action": "plugin::users-permissions.auth.emailConfirmation",
+      "locale": null
+    },
+    {
+      "documentId": "iq96y227xbrlhntbf3inmp92",
+      "action": "plugin::users-permissions.auth.forgotPassword",
+      "locale": null
+    },
+    {
+      "documentId": "na534spv35c7qar65mzl0eg6",
+      "action": "plugin::users-permissions.auth.register",
+      "locale": null
+    },
+    {
+      "documentId": "efs8fkszedwy0824gdelysvs",
+      "action": "plugin::users-permissions.auth.resetPassword",
+      "locale": null
+    },
+    {
+      "documentId": "bp07yi833ubzjhmoy93imyps",
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation",
+      "locale": null
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "documentId": "mqtm29s1xdw1iz643y5olg97",
+  "name": "Authenticated",
+  "description": "Default role given to authenticated user.",
+  "type": "authenticated",
+  "locale": null,
+  "permissions": [
+    {
+      "documentId": "cwhmw99zjcr4kkjehi5del0q",
+      "action": "api::article.article.create",
+      "locale": null
+    },
+    {
+      "documentId": "uti1qbyqykhuzagxf5jjduly",
+      "action": "api::article.article.find",
+      "locale": null
+    },
+    {
+      "documentId": "nyvxiurrh54mocq1jrqprb7l",
+      "action": "api::article.article.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "vw4vbotqhvxyd29rnmd5ljg9",
+      "action": "api::article.article.update",
+      "locale": null
+    },
+    {
+      "documentId": "k6vr7jbeoswj8cizltgrdtnr",
+      "action": "api::educational-resource.educational-resource.find",
+      "locale": null
+    },
+    {
+      "documentId": "g7nznrrhppiloj5tb4wr3p51",
+      "action": "api::educational-resource.educational-resource.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "rt6x8lp1nr2x71oozpc5ffb9",
+      "action": "api::event.event.find",
+      "locale": null
+    },
+    {
+      "documentId": "ltlbibd627vol5s1bwkbol9w",
+      "action": "api::event.event.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "dd49cg2h4ndcy0eqne5zkx9e",
+      "action": "api::feedback.feedback.create",
+      "locale": null
+    },
+    {
+      "documentId": "uia2f155voe25y50m7qpw0hj",
+      "action": "api::organization.organization.find",
+      "locale": null
+    },
+    {
+      "documentId": "b8dln638xvmzyyfdlhvhw0kp",
+      "action": "api::organization.organization.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "yl0cxdw9dx1m044d6ewocb8z",
+      "action": "api::project.project.find",
+      "locale": null
+    },
+    {
+      "documentId": "l8a1fjdzxk9qcz0486wsl0fk",
+      "action": "api::project.project.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "twelft0155lmdbq0awm7j9q8",
+      "action": "api::publication.publication.create",
+      "locale": null
+    },
+    {
+      "documentId": "cc7kwz1mqee58pz9bd9bvvb2",
+      "action": "api::publication.publication.find",
+      "locale": null
+    },
+    {
+      "documentId": "z6cnshp4hso1ywdw0ghusjen",
+      "action": "api::publication.publication.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "dwiyyvfooa5aiyi2dgwb32iu",
+      "action": "plugin::users-permissions.auth.changePassword",
+      "locale": null
+    },
+    {
+      "documentId": "p3mlkul78iqe37il3cgzcg1a",
+      "action": "plugin::users-permissions.user.me",
+      "locale": null
+    }
+  ]
+}

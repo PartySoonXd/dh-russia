@@ -1,0 +1,215 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::organization.organization",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "name",
+      "defaultSortBy": "name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "name": {
+        "edit": {
+          "label": "name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "events": {
+        "edit": {
+          "label": "events",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "events",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "users": {
+        "edit": {
+          "label": "users",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "users",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "legalForm": {
+        "edit": {
+          "label": "legalForm",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "legalForm",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "regDate": {
+        "edit": {
+          "label": "regDate",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "regDate",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "projects": {
+        "edit": {
+          "label": "projects",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "projects",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "createdAt",
+        "updatedAt",
+        "name"
+      ],
+      "edit": [
+        [
+          {
+            "name": "events",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "users",
+            "size": 6
+          },
+          {
+            "name": "name",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "legalForm",
+            "size": 6
+          },
+          {
+            "name": "regDate",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "projects",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "api::organization.organization"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

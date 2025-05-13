@@ -1,0 +1,63 @@
+{
+  "documentId": "ipfkit0qzwdu8v6nsf8yanjt",
+  "name": "Editor",
+  "code": "strapi-editor",
+  "description": "Editors can manage and publish contents including those of other users.",
+  "locale": null,
+  "permissions": [
+    {
+      "documentId": "an8e46nlgk6h157010cxu575",
+      "action": "plugin::upload.assets.copy-link",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "z6gaeff89gzorezjsdn0vwsh",
+      "action": "plugin::upload.assets.create",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "una005hdrz0de2v7r13j2xjd",
+      "action": "plugin::upload.assets.download",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "xwjmp1ulj148hiehpbkbu0j7",
+      "action": "plugin::upload.assets.update",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "cxdpv50zmvp3kwftng1gjraj",
+      "action": "plugin::upload.configure-view",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "p0czd9ukfw5m71a4dx4hjmul",
+      "action": "plugin::upload.read",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    }
+  ]
+}

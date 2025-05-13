@@ -1,0 +1,217 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::project.project",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "event": {
+        "edit": {
+          "label": "event",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "event",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "base": {
+        "edit": {
+          "label": "base",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "base",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "users": {
+        "edit": {
+          "label": "users",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "users",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "organizations": {
+        "edit": {
+          "label": "organizations",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "organizations",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "dates": {
+        "edit": {
+          "label": "dates",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "dates",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "goal": {
+        "edit": {
+          "label": "goal",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "goal",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "createdAt",
+        "updatedAt",
+        "base"
+      ],
+      "edit": [
+        [
+          {
+            "name": "event",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "base",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "users",
+            "size": 6
+          },
+          {
+            "name": "organizations",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "dates",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "goal",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "api::project.project"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
