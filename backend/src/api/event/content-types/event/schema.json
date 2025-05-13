@@ -29,15 +29,34 @@
       "target": "plugin::users-permissions.user",
       "mappedBy": "events"
     },
-    "base": {
-      "type": "component",
-      "repeatable": false,
-      "component": "entry.base"
-    },
     "dates": {
       "type": "component",
       "repeatable": false,
       "component": "entry.dates"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 600
+    },
+    "text": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 15000
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }

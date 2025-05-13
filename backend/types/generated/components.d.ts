@@ -1,27 +1,5 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
-export interface EntryBase extends Struct.ComponentSchema {
-  collectionName: 'components_entry_bases';
-  info: {
-    displayName: 'base';
-    icon: '';
-  };
-  attributes: {
-    image: Schema.Attribute.Media<'images' | 'files'> &
-      Schema.Attribute.Required;
-    text: Schema.Attribute.RichText &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetMinMaxLength<{
-        maxLength: 15000;
-      }>;
-    title: Schema.Attribute.String &
-      Schema.Attribute.Required &
-      Schema.Attribute.SetMinMaxLength<{
-        maxLength: 600;
-      }>;
-  };
-}
-
 export interface EntryDates extends Struct.ComponentSchema {
   collectionName: 'components_entry_dates';
   info: {
@@ -44,7 +22,6 @@ export interface EntryDates extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
-      'entry.base': EntryBase;
       'entry.dates': EntryDates;
     }
   }

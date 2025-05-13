@@ -16,10 +16,29 @@
       "required": true,
       "maxLength": 400
     },
-    "base": {
-      "type": "component",
-      "repeatable": false,
-      "component": "entry.base"
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 600,
+      "required": true
+    },
+    "text": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 15000
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }
