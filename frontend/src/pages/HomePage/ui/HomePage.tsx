@@ -19,7 +19,7 @@ const HomePage = ({ className }: HomePageProps) => {
 	}
 
 	const getData = async () => {
-		const res = await $publicApi.get('/api/articles?populate[base][populate]=image&pagination[pageSize]=100')
+		const res = await $publicApi.get('/api/articles?populate=image')
 		console.log(res.data)
 	}
 
@@ -62,7 +62,7 @@ const HomePage = ({ className }: HomePageProps) => {
 				<input type="password" name="password" placeholder="password" />
 				<Button type="submit">Submit</Button>
 			</form> */}
-			{/* <Button onClick={getData}>Get data</Button> */}
+			<Button onClick={getData}>Get data</Button>
 			{/* <form onSubmit={e => createData(e)} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
 				<input type="file" name="files" placeholder="password" />
 				<Button type="submit">Submit</Button>
