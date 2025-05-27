@@ -420,6 +420,85 @@
       "locale": null
     },
     {
+      "documentId": "llzhq9mpmsckyq8t7a0wkvd1",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "fields": [
+          "text"
+        ],
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "jgwsm6zhp0xzxqkc3elf8s6m",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "it450o9pjx5l1j2e1g8qyzrd",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "pha97vhwdbxh49ng0urdcffp",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "fields": [
+          "text"
+        ],
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "jr8r3xml8nhy3hf9m5lbdtge",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "fields": [
+          "text"
+        ],
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
       "documentId": "gea2uvpberuo480hm72vmj4v",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
@@ -642,6 +721,85 @@
         "fields": [
           "text",
           "slug"
+        ],
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "k3hrre6py5mynm5fotimuocq",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::terms-of-service.terms-of-service",
+      "properties": {
+        "fields": [
+          "text"
+        ],
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ghc23m2vj3o3wtst13p3fk83",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::terms-of-service.terms-of-service",
+      "properties": {
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ah7v7xox41y6cuiwd7c0w7wj",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::terms-of-service.terms-of-service",
+      "properties": {
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "qvcpaayrsoo24lrbtggbmogp",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::terms-of-service.terms-of-service",
+      "properties": {
+        "fields": [
+          "text"
+        ],
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "hrc0u0ms9fd82ms0sfkga2gy",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::terms-of-service.terms-of-service",
+      "properties": {
+        "fields": [
+          "text"
         ],
         "locales": [
           "en",

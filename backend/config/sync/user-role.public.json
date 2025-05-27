@@ -51,6 +51,11 @@
       "locale": null
     },
     {
+      "documentId": "jm3ck55yfztbs69fgjckys6k",
+      "action": "api::privacy-policy.privacy-policy.find",
+      "locale": null
+    },
+    {
       "documentId": "n0qxnjgkyg66mnzsao66ktij",
       "action": "api::project.project.find",
       "locale": null
@@ -78,6 +83,11 @@
     {
       "documentId": "myrhs18dap0jmerbw7t5t4o2",
       "action": "api::tag.tag.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "wccselwvizmkpg4szwjx5xq4",
+      "action": "api::terms-of-service.terms-of-service.find",
       "locale": null
     },
     {
