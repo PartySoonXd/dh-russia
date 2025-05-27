@@ -1,6 +1,6 @@
 import { classNames } from '@shared/lib/classNames/classNames'
 import cls from './footer.module.scss'
-import { AppLink, AppLinkTheme } from '@shared/ui/AppLink/ui/AppLink'
+import { AppLink } from '@shared/ui/AppLink/ui/AppLink'
 import { useTranslation } from 'react-i18next'
 
 interface FooterProps {
@@ -11,13 +11,39 @@ export const Footer = ({ className }: FooterProps) => {
 	const { t } = useTranslation()
 
 	return (
-		<div className={classNames(cls['footer'], {}, [className])}>
-			<AppLink to="/about" theme={AppLinkTheme.INVERTED}>
-				{t('about-link')}
-			</AppLink>
-			<AppLink to="/policy" theme={AppLinkTheme.INVERTED}>
-				{t('policy-link')}
-			</AppLink>
-		</div>
+		<footer className={classNames(cls['footer'], {}, [className])}>
+			<div className="container-lg">
+				<nav className={cls.section}>
+					<h3 className={classNames(cls.subtitle, {}, ['h2'])}>Меню</h3>
+					<ul className={cls.links}>
+						<li className={cls.link}>
+							<AppLink to="/" className="p-sm">
+								{t('home-link')}
+							</AppLink>
+						</li>
+						<li className={cls.link}>
+							<AppLink to="/blog" className="p-sm">
+								{t('blog-link')}
+							</AppLink>
+						</li>
+						<li className={cls.link}>
+							<AppLink to="/educational-resources" className="p-sm">
+								{t('educational-resources-link')}
+							</AppLink>
+						</li>
+						<li className={cls.link}>
+							<AppLink to="/projects" className="p-sm">
+								{t('projects-link')}
+							</AppLink>
+						</li>
+						<li className={cls.link}>
+							<AppLink to="#" className="p-sm">
+								{t('profile-link')}
+							</AppLink>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
 	)
 }

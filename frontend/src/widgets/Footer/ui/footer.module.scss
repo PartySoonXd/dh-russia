@@ -1,3 +1,18 @@
 .footer {
-    background: var(--inverted-bg-color);
+    background: var(--primary-color);
+    color: var(--light-color);
+    padding: 80px 0;
+}
+.subtitle {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--light-color);
+}
+.links {
+    margin-top: 20px;
+    a {
+        color: var(--light-color);
+    }    
+}
+.link {
+    margin-bottom: 15px;
 }

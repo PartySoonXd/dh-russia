@@ -1,11 +1,14 @@
 .app-link {
-	color: var(--primary-color);
+	color: var(--dark-color);
+	&.white-text {
+		color: var(--light-color)
+	}
 }
 
 .primary {
-	color: var(--primary-color);
+	text-decoration: none;
 }
 
-.inverted {
-	color: var(--inverted-primary-color);
+.underlined {
+	text-decoration: underline;
 }
