@@ -1,7 +1,9 @@
+import { ArticleCard } from '@entities/Article'
 import { useGetArticles } from '@features/Article'
 import { classNames } from '@shared/lib/classNames/classNames'
-import { AppLink } from '@shared/ui/AppLink/ui/AppLink'
+import { TagFilters } from '@widgets/Filter'
 import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
 
 interface BlogPageProps {
 	className?: string
@@ -9,18 +11,21 @@ interface BlogPageProps {
 
 const BlogPage = ({ className }: BlogPageProps) => {
 	const { t } = useTranslation()
-	const { data } = useGetArticles()
-
-	console.log(data)
+	const [query, setQuery] = useState<string[]>([])
+	const { data } = useGetArticles(query)
 
 	return (
 		<div className={classNames('', {}, [className])}>
 			<h1>BlogPage</h1>
+			<TagFilters setQuery={setQuery} />
 			{data && data.map((article) => {
 				return (
-					<AppLink to={`/article/${article.slug}`}>
-						{article.title}
-					</AppLink>
+					<ArticleCard
+						slug={article.slug}
+						text={article.text}
+						title={article.title}
+						key={article.id}
+					/>
 				)
 			})}
 		</div>

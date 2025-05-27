@@ -1,9 +1,26 @@
-import { Article } from '@entities/Article/api/article.types'
-import { ArticleResponseSchema } from '@entities/Article/model/article.schemas'
+import type { Article } from '@entities/Article'
+import { ArticleResponseSchema } from '@entities/Article'
 import { $publicApi } from '@shared/api/api'
 
-export const getArticles = async (): Promise<Article[]> => {
-	const res = await $publicApi.get('/api/articles?populate=*')
+export const getArticles = async (query: string[]): Promise<Article[]> => {
+	const res = await $publicApi.get('/api/articles', {
+		params: {
+			populate: {
+				tags: {
+					fields: ['text'],
+				},
+			},
+			filters: {
+				tags: {
+					slug: {
+						$in: query,
+					},
+				},
+			},
+			fields: ['text', 'slug', 'title'],
+		},
+	})
+
 	const parsed = ArticleResponseSchema.parse(res.data)
 
 	return parsed.data

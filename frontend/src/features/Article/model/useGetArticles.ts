@@ -1,15 +1,14 @@
 import { useQuery } from '@tanstack/react-query'
 import { getArticles } from '../api/getArticles'
-import { articleMapper } from '@entities/Article/api/article.mappers'
+import { articleMapper } from '@entities/Article'
 
-export const useGetArticles = () => {
+export const useGetArticles = (query: string[] = []) => {
 	return useQuery({
-		queryKey: ['articles'],
+		queryKey: ['articles', query],
 		queryFn: async () => {
-			const data = await getArticles()
+			const data = await getArticles(query)
 
 			return data.map(articleMapper)
 		},
-		staleTime: 1000 * 60 * 5,
 	})
 }
