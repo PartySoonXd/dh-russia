@@ -34,20 +34,6 @@
           "sortable": true
         }
       },
-      "base": {
-        "edit": {
-          "label": "base",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "base",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "users": {
         "edit": {
           "label": "users",
@@ -104,6 +90,62 @@
           "label": "goal",
           "searchable": false,
           "sortable": false
+        }
+      },
+      "image": {
+        "edit": {
+          "label": "image",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "image",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "title": {
+        "edit": {
+          "label": "title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "text": {
+        "edit": {
+          "label": "text",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "text",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "slug": {
+        "edit": {
+          "label": "slug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slug",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -170,19 +212,13 @@
         "id",
         "createdAt",
         "updatedAt",
-        "base"
+        "title"
       ],
       "edit": [
         [
           {
             "name": "event",
             "size": 6
-          }
-        ],
-        [
-          {
-            "name": "base",
-            "size": 12
           }
         ],
         [
@@ -205,6 +241,28 @@
           {
             "name": "goal",
             "size": 12
+          }
+        ],
+        [
+          {
+            "name": "image",
+            "size": 6
+          },
+          {
+            "name": "title",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "text",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "slug",
+            "size": 6
           }
         ]
       ]

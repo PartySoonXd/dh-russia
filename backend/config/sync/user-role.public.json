@@ -6,6 +6,11 @@
   "locale": null,
   "permissions": [
     {
+      "documentId": "iym1hbctpw8jge5uyvhb6jkq",
+      "action": "api::article.article.create",
+      "locale": null
+    },
+    {
       "documentId": "uoas8i5gp5rfr9nbxx5lpdfl",
       "action": "api::article.article.find",
       "locale": null
@@ -63,6 +68,36 @@
     {
       "documentId": "vdg3z1xq29o1bdalc85wp856",
       "action": "api::publication.publication.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "yxsxdh6p5ybhhvlxcrlfjos3",
+      "action": "api::tag.tag.find",
+      "locale": null
+    },
+    {
+      "documentId": "myrhs18dap0jmerbw7t5t4o2",
+      "action": "api::tag.tag.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "h1vi94nx16h8zbfzmis23dj8",
+      "action": "plugin::upload.content-api.destroy",
+      "locale": null
+    },
+    {
+      "documentId": "up3scqqk1116h0u5tm4tedz3",
+      "action": "plugin::upload.content-api.find",
+      "locale": null
+    },
+    {
+      "documentId": "hnwr102b6fh6e7u4c9j3humz",
+      "action": "plugin::upload.content-api.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "r4wh12uxm2lrlqc0oe6yvtvd",
+      "action": "plugin::upload.content-api.upload",
       "locale": null
     },
     {

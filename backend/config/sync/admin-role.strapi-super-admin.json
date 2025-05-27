@@ -6,16 +6,18 @@
   "locale": null,
   "permissions": [
     {
-      "documentId": "z2fdvdp0a8f1xytzfys7lcqy",
+      "documentId": "lm6j81ykgccuma8z9tyglbwr",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::article.article",
       "properties": {
         "fields": [
-          "base.title",
-          "base.text",
-          "base.image",
-          "user"
+          "user",
+          "image",
+          "title",
+          "text",
+          "slug",
+          "tags"
         ]
       },
       "conditions": [],
@@ -40,48 +42,53 @@
       "locale": null
     },
     {
-      "documentId": "dldzoxyd1mtf31gdkxarjg58",
+      "documentId": "pui35pc0ugijwhhd6d4uz68n",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::article.article",
       "properties": {
         "fields": [
-          "base.title",
-          "base.text",
-          "base.image",
-          "user"
+          "user",
+          "image",
+          "title",
+          "text",
+          "slug",
+          "tags"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "tpa3lyi9ado5k9403u7cnhh3",
+      "documentId": "u8s1rdabp8g3xlm696kx3h7f",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::article.article",
       "properties": {
         "fields": [
-          "base.title",
-          "base.text",
-          "base.image",
-          "user"
+          "user",
+          "image",
+          "title",
+          "text",
+          "slug",
+          "tags"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "dbuutawobyg7kavcxigi2edr",
+      "documentId": "ag7axtqp12omf9htzk0xxvav",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::educational-resource.educational-resource",
       "properties": {
         "fields": [
           "link",
-          "base.title",
-          "base.text",
-          "base.image"
+          "image",
+          "title",
+          "text",
+          "slug"
         ]
       },
       "conditions": [],
@@ -106,39 +113,41 @@
       "locale": null
     },
     {
-      "documentId": "uj29jxadmeapyw8opnqcow2y",
+      "documentId": "qjldcf07pjnmbi0jbpgxv8c5",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::educational-resource.educational-resource",
       "properties": {
         "fields": [
           "link",
-          "base.title",
-          "base.text",
-          "base.image"
+          "image",
+          "title",
+          "text",
+          "slug"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "jvzcm019l23saawcuvhr6n59",
+      "documentId": "fbxudpzvdranibusfc93ouh8",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::educational-resource.educational-resource",
       "properties": {
         "fields": [
           "link",
-          "base.title",
-          "base.text",
-          "base.image"
+          "image",
+          "title",
+          "text",
+          "slug"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "gyafqpawmu5okmoihdp5wck4",
+      "documentId": "y8gq1y8e31ut5y5gaposeqn3",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::event.event",
@@ -147,12 +156,13 @@
           "organizations",
           "projects",
           "users",
-          "base.title",
-          "base.text",
-          "base.image",
           "dates.startDate",
           "dates.endDate",
-          "dates.condition"
+          "dates.condition",
+          "image",
+          "title",
+          "text",
+          "slug"
         ]
       },
       "conditions": [],
@@ -177,7 +187,7 @@
       "locale": null
     },
     {
-      "documentId": "r90f0ju41cpf706k9azqexws",
+      "documentId": "pnejrlasf8c7sp03e6krl050",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::event.event",
@@ -186,19 +196,20 @@
           "organizations",
           "projects",
           "users",
-          "base.title",
-          "base.text",
-          "base.image",
           "dates.startDate",
           "dates.endDate",
-          "dates.condition"
+          "dates.condition",
+          "image",
+          "title",
+          "text",
+          "slug"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "b0e9t6veg9tc3jsam4t2bwhd",
+      "documentId": "e88g0j75dpfz7pogfyqbhrzd",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::event.event",
@@ -207,12 +218,13 @@
           "organizations",
           "projects",
           "users",
-          "base.title",
-          "base.text",
-          "base.image",
           "dates.startDate",
           "dates.endDate",
-          "dates.condition"
+          "dates.condition",
+          "image",
+          "title",
+          "text",
+          "slug"
         ]
       },
       "conditions": [],
@@ -408,22 +420,23 @@
       "locale": null
     },
     {
-      "documentId": "obhlnacyapz357cc69duq62h",
+      "documentId": "gea2uvpberuo480hm72vmj4v",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::project.project",
       "properties": {
         "fields": [
           "event",
-          "base.title",
-          "base.text",
-          "base.image",
           "users",
           "organizations",
           "dates.startDate",
           "dates.endDate",
           "dates.condition",
-          "goal"
+          "goal",
+          "image",
+          "title",
+          "text",
+          "slug"
         ]
       },
       "conditions": [],
@@ -448,44 +461,46 @@
       "locale": null
     },
     {
-      "documentId": "duw7ev2s9x4crtuqledg5gvj",
+      "documentId": "u9xxo72ixyc1cjfe7tfutv17",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::project.project",
       "properties": {
         "fields": [
           "event",
-          "base.title",
-          "base.text",
-          "base.image",
           "users",
           "organizations",
           "dates.startDate",
           "dates.endDate",
           "dates.condition",
-          "goal"
+          "goal",
+          "image",
+          "title",
+          "text",
+          "slug"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "wwfp6c6hqk16khrpy0ofxwir",
+      "documentId": "eh5ik6wrzyifqqbyn01l64no",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::project.project",
       "properties": {
         "fields": [
           "event",
-          "base.title",
-          "base.text",
-          "base.image",
           "users",
           "organizations",
           "dates.startDate",
           "dates.endDate",
           "dates.condition",
-          "goal"
+          "goal",
+          "image",
+          "title",
+          "text",
+          "slug"
         ]
       },
       "conditions": [],
@@ -549,6 +564,88 @@
           "link",
           "user",
           "title"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "tz2s1ku8zki3episqq4j2sbd",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::tag.tag",
+      "properties": {
+        "fields": [
+          "text",
+          "slug"
+        ],
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "nxriymtp6hr0m8yqftsq6ays",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::tag.tag",
+      "properties": {
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "cp839ixpbjhtzf66pwmg228m",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::tag.tag",
+      "properties": {
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "imw51102gqzvjhxvttsqut4o",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::tag.tag",
+      "properties": {
+        "fields": [
+          "text",
+          "slug"
+        ],
+        "locales": [
+          "en",
+          "ru-RU"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "pg8eq10sbjvx65rdvp7xdgd3",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::tag.tag",
+      "properties": {
+        "fields": [
+          "text",
+          "slug"
+        ],
+        "locales": [
+          "en",
+          "ru-RU"
         ]
       },
       "conditions": [],
