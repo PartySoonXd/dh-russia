@@ -1,7 +1,7 @@
 import './styles/index.scss'
 
 import { classNames } from '@shared/lib/classNames/classNames'
-import { Navbar } from '@widgets/Navbar'
+import { Header } from '@widgets/Header'
 import { Suspense } from 'react'
 import { PageLoader } from '@widgets/PageLoader'
 import { useTheme } from './providers/ThemeProvider'
@@ -14,7 +14,7 @@ const App = () => {
 	return (
 		<div className={classNames('app', {}, [theme])}>
 			<Suspense fallback={<PageLoader />}>
-				<Navbar />
+				<Header />
 				<main className="content" style={{ flexGrow: 1 }}>
 					<AppRouter />
 				</main>
